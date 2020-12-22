@@ -8,7 +8,7 @@ const FamiliaMembro = (props)=>{
     return(
       <span>
        
-       <p>{nome}</p><p>{sobrenome}</p>
+       <p>{nome}</p> <p>{sobrenome}</p>
       </span>
 
     )

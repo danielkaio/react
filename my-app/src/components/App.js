@@ -7,6 +7,8 @@ import Random from '../components/Random'
 import Card from '../components/telas/Card'
 import '../components/telas/Card'
 import Famila from '../components/Familia'
+import FamiliaMembro from '../components/FamiliaMembro'
+
 
 
 
@@ -23,9 +25,19 @@ const app = (props) => {
         <Card titulo='fragmento'>
           <Fragmento></Fragmento>
         </Card>
-        <Card titulo='Primeiro Componente'> <Primeiro></Primeiro></Card>
-        <Card titulo='Com Parametro'> <ComParametro titulo="Daniel" idade={70}></ComParametro></Card>
-        <Card color="navy" titulo='Componente com filhos'><Famila sobrenome ="Ajala"></Famila> </Card>
+        <Card titulo='Primeiro Componente'> 
+        <Primeiro></Primeiro>
+        </Card>
+        <Card titulo='Com Parametro'> 
+        <ComParametro titulo="Daniel" idade={70}></ComParametro>
+        </Card>
+        <Card color="navy" titulo='Componente com filhos'>
+        <Famila sobrenome ="Ajala">
+        <FamiliaMembro nome="karina"></FamiliaMembro>
+        <FamiliaMembro nome="Joana"></FamiliaMembro>
+            
+        </Famila>
+        </Card>
       </div>
     </div>
   )
