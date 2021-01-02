@@ -8,6 +8,7 @@ import Card from '../components/telas/Card'
 import '../components/telas/Card'
 import Famila from '../components/Familia'
 import FamiliaMembro from '../components/FamiliaMembro'
+import ListaAlunos from '../components/ListaAlunos'
 
 
 
@@ -34,9 +35,12 @@ const app = (props) => {
         <Card color="navy" titulo='Componente com filhos'>
         <Famila sobrenome ="Ajala">
         <FamiliaMembro nome="karina"></FamiliaMembro>
-        <FamiliaMembro nome="Joana"></FamiliaMembro>
-            
+        <FamiliaMembro nome="Joana"></FamiliaMembro> 
         </Famila>
+        </Card>
+
+        <Card color="pink" titulo="repetição "> 
+        <ListaAlunos></ListaAlunos>
         </Card>
       </div>
     </div>
