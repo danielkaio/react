@@ -10,7 +10,6 @@ const lista = () => {
                 {aluno.id}
                 {aluno.nome}
                 {aluno.nota}
-
             </li>
         )
 

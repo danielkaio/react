@@ -9,8 +9,9 @@ import '../components/telas/Card'
 import Famila from '../components/Familia'
 import FamiliaMembro from '../components/FamiliaMembro'
 import ListaAlunos from '../components/ListaAlunos'
-
-
+import TabelaProdutos from '../components/TabelasProdutos'
+import ParouImpar from '../components/ParouImpar'
+import UsuarioInfo from '../components/UsuarioInfo'
 
 
 const app = (props) => {
@@ -42,6 +43,15 @@ const app = (props) => {
         <Card color="pink" titulo="repetição "> 
         <ListaAlunos></ListaAlunos>
         </Card>
+        <Card color="gray" titulo=" desafio repetição "> 
+        <TabelaProdutos></TabelaProdutos>
+        </Card>
+        <Card color="green" titulo=" rederinzação condicional "> 
+        <ParouImpar numero = {2}></ParouImpar>
+        <UsuarioInfo usuario = {{nome:'rosa'}}></UsuarioInfo>
+        <UsuarioInfo usuario = {{email:"dani.ajala@yahoo.com"}}></UsuarioInfo>
+        </Card>
+        
       </div>
     </div>
   )
