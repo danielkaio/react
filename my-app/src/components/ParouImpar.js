@@ -8,7 +8,7 @@ const Condicional =(props)=>{
  const isPar = numero % 2 === 0
 
     return (
-        <div>
+         <div>
             {isPar ?   
             <span>par </span> : 
             <span>impar</span> 

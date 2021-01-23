@@ -12,6 +12,9 @@ import ListaAlunos from '../components/ListaAlunos'
 import TabelaProdutos from '../components/TabelasProdutos'
 import ParouImpar from '../components/ParouImpar'
 import UsuarioInfo from '../components/UsuarioInfo'
+import DiretaPai from '../comunicacao/DiretaPai'
+import IndiretaPai from '../comunicacao/IndiretaPai'
+import Formulario from '../formulario/Input'
 
 
 const app = (props) => {
@@ -46,10 +49,19 @@ const app = (props) => {
         <Card color="gray" titulo=" desafio repetição "> 
         <TabelaProdutos></TabelaProdutos>
         </Card>
+        <Card color="orange" titulo=" comunicação direta "> 
+       <DiretaPai></DiretaPai>
+        </Card>
+        <Card color="#c1c1c1" titulo=" comunicação indireta "> 
+        <IndiretaPai></IndiretaPai>
+        </Card>
+        <Card color="#c1c1c1" titulo="  componente controlado "> 
+       <Formulario></Formulario>
+        </Card>
         <Card color="green" titulo=" rederinzação condicional "> 
         <ParouImpar numero = {2}></ParouImpar>
         <UsuarioInfo usuario = {{nome:'rosa'}}></UsuarioInfo>
-        <UsuarioInfo usuario = {{email:"dani.ajala@yahoo.com"}}></UsuarioInfo>
+        <UsuarioInfo usuario = {{}}></UsuarioInfo>
         </Card>
         
       </div>

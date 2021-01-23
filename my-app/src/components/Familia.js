@@ -3,7 +3,7 @@ import React, { cloneElement } from 'react'
 
 const Familia = (props) => {
 
-  console.log(typeof props.children)
+
   return (
 
   
