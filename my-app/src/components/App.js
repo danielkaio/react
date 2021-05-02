@@ -14,7 +14,8 @@ import ParouImpar from '../components/ParouImpar'
 import UsuarioInfo from '../components/UsuarioInfo'
 import DiretaPai from '../comunicacao/DiretaPai'
 import IndiretaPai from '../comunicacao/IndiretaPai'
-import Formulario from '../formulario/Input'
+import Formulario from '../formulario/input'
+
 
 
 const app = (props) => {
@@ -24,46 +25,51 @@ const app = (props) => {
 
       <div className="exercicio">
 
-        <Card titulo='desafio aleatorio'color="orange">
+        <Card titulo='desafio aleatorio' color="tomato">
           <Random max={10} min={1}></Random>
         </Card>
         <Card titulo='fragmento'>
           <Fragmento></Fragmento>
         </Card>
-        <Card titulo='Primeiro Componente'> 
-        <Primeiro></Primeiro>
+        <Card titulo='Primeiro Componente'>
+          <Primeiro></Primeiro>
         </Card>
-        <Card titulo='Com Parametro'> 
-        <ComParametro titulo="Daniel" idade={70}></ComParametro>
+        <Card titulo='Com Parametro' color="gray">
+          <ComParametro titulo="Daniel" idade={70}></ComParametro>
         </Card>
         <Card color="navy" titulo='Componente com filhos'>
-        <Famila sobrenome ="Ajala">
-        <FamiliaMembro nome="karina"></FamiliaMembro>
-        <FamiliaMembro nome="Joana"></FamiliaMembro> 
-        </Famila>
+          <Famila sobrenome="Ajala">
+            <FamiliaMembro nome="karina"></FamiliaMembro>
+            <FamiliaMembro nome="Joana"></FamiliaMembro>
+          </Famila>
         </Card>
 
-        <Card color="pink" titulo="repetição "> 
-        <ListaAlunos></ListaAlunos>
+        <Card color="green" titulo="repetição ">
+          <ListaAlunos></ListaAlunos>
         </Card>
-        <Card color="gray" titulo=" desafio repetição "> 
-        <TabelaProdutos></TabelaProdutos>
+        <Card color="black" titulo=" desafio repetição ">
+          <TabelaProdutos></TabelaProdutos>
         </Card>
-        <Card color="orange" titulo=" comunicação direta "> 
-       <DiretaPai></DiretaPai>
+        <Card color="orange" titulo=" comunicação direta ">
+          <DiretaPai></DiretaPai>
         </Card>
-        <Card color="#c1c1c1" titulo=" comunicação indireta "> 
-        <IndiretaPai></IndiretaPai>
+        <Card color="#c1c1c1" titulo=" comunicação indireta ">
+          <IndiretaPai></IndiretaPai>
         </Card>
-        <Card color="#c1c1c1" titulo="  componente controlado "> 
-       <Formulario></Formulario>
+        <Card color="#c1c1c1" titulo="  componente controlado ">
+          <Formulario></Formulario>
         </Card>
-        <Card color="green" titulo=" rederinzação condicional "> 
-        <ParouImpar numero = {2}></ParouImpar>
-        <UsuarioInfo usuario = {{nome:'rosa'}}></UsuarioInfo>
-        <UsuarioInfo usuario = {{}}></UsuarioInfo>
+        <Card color="blue" titulo=" rederinzação condicional ">
+          <ParouImpar numero={2}></ParouImpar>
+          <UsuarioInfo usuario={{ nome: 'rosa' }}></UsuarioInfo>
+          <UsuarioInfo usuario={{}}></UsuarioInfo>
         </Card>
-        
+        <Card color="orange" titulo="componente controlado">
+          <Formulario></Formulario>
+        </Card>
+
+
+
       </div>
     </div>
   )
