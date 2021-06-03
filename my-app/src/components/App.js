@@ -15,6 +15,7 @@ import UsuarioInfo from '../components/UsuarioInfo'
 import DiretaPai from '../comunicacao/DiretaPai'
 import IndiretaPai from '../comunicacao/IndiretaPai'
 import Formulario from '../formulario/input'
+import Contador from '../components/Contador'
 
 
 
@@ -47,7 +48,7 @@ const app = (props) => {
         <Card color="green" titulo="repetição ">
           <ListaAlunos></ListaAlunos>
         </Card>
-        <Card color="black" titulo=" desafio repetição ">
+        <Card color="gray" titulo=" desafio repetição ">
           <TabelaProdutos></TabelaProdutos>
         </Card>
         <Card color="orange" titulo=" comunicação direta ">
@@ -56,9 +57,7 @@ const app = (props) => {
         <Card color="#c1c1c1" titulo=" comunicação indireta ">
           <IndiretaPai></IndiretaPai>
         </Card>
-        <Card color="#c1c1c1" titulo="  componente controlado ">
-          <Formulario></Formulario>
-        </Card>
+      
         <Card color="blue" titulo=" rederinzação condicional ">
           <ParouImpar numero={2}></ParouImpar>
           <UsuarioInfo usuario={{ nome: 'rosa' }}></UsuarioInfo>
@@ -66,7 +65,18 @@ const app = (props) => {
         </Card>
         <Card color="orange" titulo="componente controlado">
           <Formulario></Formulario>
+        
         </Card>
+
+        <Card color="orange" titulo="componente controlado">
+          <Formulario></Formulario>
+        </Card>
+
+
+        <Card color="orange" titulo="componente controlado">
+          <Contador inicial = {150}></Contador>
+        </Card>
+
 
 
 

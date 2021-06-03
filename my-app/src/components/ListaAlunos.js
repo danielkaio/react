@@ -5,6 +5,8 @@ import alunos from '../data/alunos'
 const lista = () => {
 
     const itens = alunos.map((aluno) => {
+
+       
         return (
             <li key={aluno.id}>
                 {aluno.id}
